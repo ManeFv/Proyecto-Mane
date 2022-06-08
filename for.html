@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="estilos.css"/>
+</head><style>
+    body, html {
+      height: 100%;
+      font-family:monospace,monospace;
+    }
+    
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("uno.jpg");
+      min-height: 75%;
+    }
+    
+    .menu {
+      display: none;
+    }
+    </style>
+<body>
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+          <div class="w3-col s3">
+            <a href="final.html" class="w3-button w3-block w3-black">INICIO</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="final.html" class="w3-button w3-block w3-black">SOBRE NOSOTROS</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="final.html" class="w3-button w3-block w3-black">MENU</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="final.html" class="w3-button w3-block w3-black">¿DONDE ESTAMOS?</a>
+          </div>
+        
+        </div>
+      </div><br><br><br><br><br><br>
+    <div class="form">
+        <form action="formulario.php" method="POST">
+            <p>Nombre</p>
+
+            <label for="nombre">Su nombre</label>
+            <br>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <p>Edad</p>
+            <label for="correo">Tu edad</label>
+            <br>
+            <input type="text" name="correo" placeholder="12-70" required>
+            <p>¿algunas enfermedades?</p>
+            <label for="mensaje">Dime si eres alergico!</label>
+            <br>
+            <textarea name="mensaje" placeholder="Enfermedad" required></textarea>
+            <br>
+            <br>
+            
+              <p>¿Cuál es tu comida favorita?</p>
+              <ul>
+                <li>
+                  <label for="nombre">Sopa</label>
+                  <input type="radio" id="sopa" name="comidafav" value="sopa" checked>
+                </li>
+                <li>
+                  <label for="nombre">Curry</label>
+                  <input type="radio" id="curry" name="comidafav" value="curry">
+                </li>
+                <li>
+                  <label for="nombre">Pizza</label>
+                  <input type="radio" id="pizza" name="comidafav" value="pizza">
+                </li>
+              </ul>
+          
+       <br>
+          
+              <p>Contraseña de la cuenta:</p>
+              <label>Dame unas contraseña para tu cuenta</label>
+              <input type="password" name="contraseña">
+            
+          <br><br><br>
+          
+          <p>Sexo</p>
+          <input type="radio" name="genero" value="masculino" checked><label> Hombre </label> <br>
+          <input type="radio" name="genero" value="femenino"> <label>  Mujer </label><br>
+          <input type="radio" name="genero" value="otro"> <label> Otro    </label>
+            
+            <br><br><br>
+            
+            <p>Qué manejo?</p>
+                <br> 
+              <input type="checkbox" name="bici" value="bici" checked> <label> Tengo una bicicleta</label> <br>
+              <input type="checkbox" name="carro" value="carro"> <label> Tengo un coche</label><br>
+              <input type="checkbox" name="nada" value="nothing"> <label> Me voy caminando</label>  
+           
+            <br><br>
+            
+              <p>Correo electrónico:</p>
+              <input type="email" name="email">        
+    <br>
+    <br> 
+            <input type="submit" value="Enviar">
+            
+    <br> <br><br><br>
+    <br> <br><br><br>
+        </form> 
+    </div>
+</body>
+<style>
+    
+
+* {
+  
+  font-family: "Inconsolata", sans-serif;
+}
+.solo{
+  text-decoration: none;
+  float: center;
+  direction: fixed;
+  text-align: center;
+}
+
+
+.footer-distributed{
+  background: #444;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 16px sans-serif;
+  text-align: left;
+  padding: 50px 60px 40px;
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Roboto', cursive;
+  margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+  color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+  margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  float: right;
+}
+
+.footer-distributed .footer-right p{
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 42px 0 0;
+  color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+  display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color:  #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color:  #d1d2d2;
+
+  width: 400px;
+  padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+  color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+  color:  #5c666b;
+  opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+  color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+  border-radius: 3px;
+  background-color:  #33383b;
+  color: #ffffff;
+  border: 0;
+  padding: 15px 50px;
+  font-weight: bold;
+  float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-company-name{
+    font-size: 12px;
+  }
+
+  .footer-distributed form input,
+  .footer-distributed form textarea{
+    width: 250px;
+  }
+
+  .footer-distributed form button{
+    padding: 10px 35px;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .footer-distributed{
+    padding: 30px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right{
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-distributed .footer-left{
+    margin-bottom: 40px;
+  }
+
+  .footer-distributed form{
+    margin-top: 30px;
+  }
+
+  .footer-distributed form{
+    display: block;
+  }
+
+  .footer-distributed form button{
+    float: none;
+  }
+}
+</style>
+
+</html>

@@ -1,0 +1,65 @@
+body {
+    background-color: #d5d1c3;
+}
+.form {
+    position: relative;
+    width: 500px;
+    height:1599px;
+    padding-left: 20px;
+    padding-top: 15px;
+    background-color: #cbbe94;
+    border-radius: 20px;
+    margin: auto;
+}
+input[type=text],[type=email],[type=password]{
+    width:500px;
+border:4px double #0080FF;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: 8px 8px 6px #808080;
+-moz-box-shadow: 8px 8px 6px #808080;
+box-shadow: 8px 8px 6px #808080;
+background-color: #CEECF5;
+padding: 10px;
+font-family: Verdana, Geneva, sans-serif;
+
+
+}
+textarea {
+    width: 470px;
+    height: 110px;
+    font-family:Arial, Helvetica, sans-serif;
+    border:4px double #0080FF;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: 8px 8px 6px #808080;
+-moz-box-shadow: 8px 8px 6px #808080;
+box-shadow: 8px 8px 6px #808080;
+background-color: #CEECF5;
+padding: 10px;
+font-family: Verdana, Geneva, sans-serif;
+color: #0B173B;
+}
+input[type=submit]{
+    position: relative;
+    width:150px;
+    height:40px;
+    border-radius:20px;
+    margin-left:150px;
+    border:0px;
+    background-color: #b8cdba;
+    font-family: Verdana, Geneva, sans-serif;
+}
+P{
+    text-shadow: 0 1px 0 #fff;
+    font-size: 24px;
+}
+label{
+    margin: 11px 20px 0 0;
+    font-size: 16px;
+    color: #b9aa97;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 0 rgb(56, 48, 48);
+}
