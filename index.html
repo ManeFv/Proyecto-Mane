@@ -275,6 +275,28 @@ section {
 
 
 </style>
+<script>
+  function DameLaFechaHora() {
+    var hora = new Date()
+    var hrs = hora.getHours();
+    var min = hora.getMinutes();
+    var hoy = new Date();
+    var m = new Array();
+    var d = new Array();
+    var an= hoy.getYear();
+    var amypm = hrs >= 12 ? "pm" : "am"; 
+                
+    m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+    m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+    m[6]="Julio";    m[7]="Agosto";   m[8]="Septiembre";
+    m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+    document.write("Son las "+hrs+":"+min+amypm+""+" (");
+    document.write(hoy.getDate());
+    document.write(" de ");
+    document.write(m[hoy.getMonth()]);
+    document.write(")");
+  }
+</Script>
 </head>
 <body>
 
@@ -305,7 +327,9 @@ section {
       <span class="w3-text-white" style="font-size:90px">EL CAFE</span>
     </div>
     <div class="w3-display-bottomright w3-center w3-padding-large">
-      <span class="w3-text-white">10 oct</span>
+      <span class="w3-text-white"><script>
+        DameLaFechaHora();
+      </script></span>
     </div>
   </header>
   
